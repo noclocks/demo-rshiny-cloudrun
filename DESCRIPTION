@@ -1,0 +1,24 @@
+Package: rshinycloudrun
+Title: Shiny App on Google Cloud Run
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jimmy", "Briggs", , "jimmy.briggs@noclocks.dev", role = c("aut", "cre"))
+Description: Deploy a Shiny app to Google Cloud Run.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.2),
+    golem (>= 0.4.1),
+    pkgload,
+    shiny (>= 1.8.1.1)
+Suggests: 
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.1
