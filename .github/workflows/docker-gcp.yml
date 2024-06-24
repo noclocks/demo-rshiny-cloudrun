@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'R/*'
+      - 'inst/*'
+      - 'Dockerfile'
+      - 'DESCRIPTION'
+      - 'NAMESPACE'
   workflow_dispatch:
   
 env:
