@@ -1,0 +1,80 @@
+name: Build and Deploy to Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
+env:
+  GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  GCP_REGION: ${{ secrets.GCP_REGION }}
+  GCP_SERVICE_ACCOUNT_CREDENTIALS: ${{ secrets.GCP_SERVICE_ACCOUNT_CREDENTIALS }}
+  REPOSITORY_NAME: ${{ github.repository }}
+  APP_NAME: rshinycloudrun
+
+jobs:
+  deploy:
+    permissions:
+      contents: read
+      packages: write
+      deployments: write
+      id-token: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Google Auth
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          token_format: 'access_token'
+          credentials_json: ${{ env.GCP_SERVICE_ACCOUNT_CREDENTIALS }}
+      
+      - name: Set up Cloud SDK
+        id: setup-cloud-sdk
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ env.GCP_PROJECT_ID }}
+
+      - name: Verify gcloud CLI
+        run: gcloud info
+    
+      - name: Docker Auth
+        id: docker-auth
+        run: |-
+          gcloud auth configure-docker ${{ env.GCP_REGION }}-docker.pkg.dev
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Get Image Tag
+        id: get-image-tag
+        run: |-
+          echo ::set-env name=IMAGE_TAG::${{ env.GCP_REGION }}-docker.pkg.dev/${{ env.GCP_PROJECT_ID }}/${{ env.REPOSITORY_NAME }}/${{ env.APP_NAME }}:${{ github.sha }}
+
+      - name: Build and Push Container
+        id: build
+        run: |-
+          docker build -t ${{ env.IMAGE_TAG }} .
+          docker push ${{ env.IMAGE_TAG }}
+
+      - name: Deploy to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v1
+        with:
+          service: ${{ env.APP_NAME }}
+          image: ${{ env.IMAGE_TAG }}
+          region: ${{ env.GCP_REGION }}
+          platform: managed
+          allow-unauthenticated: true
+          env_vars: |
+            R_CONFIG_ACTIVE=production
+      
+      - name: Output Service URL
+        run: echo ${{ steps.deploy.outputs.url }}
