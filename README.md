@@ -2,8 +2,8 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Codecov test coverage](https://codecov.io/gh/noclocks/demo-rshiny-cloudrun/branch/main/graph/badge.svg)](https://app.codecov.io/gh/noclocks/demo-rshiny-cloudrun?branch=main)
-[![R-CMD-check](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/R-CMD-check.yaml)
+[![Build and Push to GHCR](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-ghcr.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-ghcr.yml)
+
 <!-- badges: end -->
 
 
