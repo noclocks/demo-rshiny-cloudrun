@@ -8,8 +8,27 @@
 \description{
 Deploy a Shiny app to Google Cloud Run.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/noclocks/demo-rshiny-cloudrun}
+  \item \url{https://docs.noclocks.dev/demo-rshiny-cloudrun/}
+  \item Report bugs at \url{https://github.com/noclocks/demo-rshiny-cloudrun/issues}
+}
+
+}
 \author{
-\strong{Maintainer}: Jimmy Briggs \email{jimmy.briggs@noclocks.dev}
+\strong{Maintainer}: Jimmy Briggs \email{jimmy.briggs@jimbrig.com} (\href{https://orcid.org/0000-0002-7489-8787}{ORCID})
+
+Authors:
+\itemize{
+  \item Patrick Howard \email{patrick.howard@noclocks.dev} [reviewer]
+}
+
+Other contributors:
+\itemize{
+  \item No Clocks, LLC \email{team@noclocks.dev} [copyright holder, funder]
+}
 
 }
 \keyword{internal}
