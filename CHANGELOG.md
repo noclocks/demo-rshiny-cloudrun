@@ -18,6 +18,7 @@
 
 ## Documentation
 
+- Add badges ([939c27c](https://github.com/noclocks/demo-rshiny-cloudrun/commit/939c27c7d9af2760252340a04c16b90a7c053260))  - (Jimmy Briggs)
 - Separate index.md from README.md for pkgdown ([82ffd12](https://github.com/noclocks/demo-rshiny-cloudrun/commit/82ffd12e1811a09f33ea397411996e5aa9324535))  - (Jimmy Briggs)
 - Add TOC ([cf26d28](https://github.com/noclocks/demo-rshiny-cloudrun/commit/cf26d2858b0187ddec814ca3cb7ae61885917471))  - (Jimmy Briggs)
 - Add images ([4837232](https://github.com/noclocks/demo-rshiny-cloudrun/commit/4837232dc7d6ac483d6258812e6bdc818722dc69))  - (Jimmy Briggs)
