@@ -1,11 +1,15 @@
 CONFIG
 Config
 GCP
+GHCR
+LLC
 Lifecycle
+ORCID
 Pre
 RStudio
 SDK
 Sys
 config
+funder
 sys
 yml

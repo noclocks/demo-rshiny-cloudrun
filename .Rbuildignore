@@ -25,3 +25,9 @@ $run_dev.*
 ^docs$
 ^pkgdown$
 ^index\.md$
+^CHANGELOG\.md$
+^\.editorconfig$
+^\.gitattributes$
+^\.lintr$
+^Makefile$
+_\.new\.png$

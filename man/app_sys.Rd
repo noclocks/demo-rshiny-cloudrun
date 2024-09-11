@@ -19,7 +19,7 @@ Character vector of positive length, containing the file paths that
 Access files in the current app.
 }
 \examples{
-index_html <- app_sys("app/www/index.html")
+config_file <- app_sys("config/config.yml")
 }
 \seealso{
 [system.file()]

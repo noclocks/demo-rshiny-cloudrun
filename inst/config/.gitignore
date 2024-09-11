@@ -1,3 +1,8 @@
 *
 !.gitignore
 !README.md
+!*.encrypted.yml
+!*.template.yml
+!*.md
+!*.R
+!config.d/

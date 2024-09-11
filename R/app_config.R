@@ -12,12 +12,10 @@
 #'
 #' @seealso [system.file()]
 #'
-#' @importFrom pkgload pkg_name
-#'
 #' @examples
-#' index_html <- app_sys("app/www/index.html")
+#' config_file <- app_sys("config/config.yml")
 app_sys <- function(...) {
-  system.file(..., package = pkgload::pkg_name())
+  system.file(..., package = "rshinycloudrun")
 }
 
 

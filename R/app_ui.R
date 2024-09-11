@@ -44,7 +44,7 @@ add_external_resources <- function() {
   )
 
   tags$head(
-    golem::favicon("favicon", ext = "png"),
+    golem::favicon(),
     golem::bundle_resources(
       path = app_sys("app/www"),
       app_title = "Hello World!"

@@ -1,0 +1,10 @@
+default:
+  app_name: "<APP_NAME>"
+  app_version: "<APP_VERSION>"
+  app_prod: "<APP_PROD>"
+production:
+  app_prod: "<APP_PROD>"
+dev:
+  app_wd: "<APP_WD>"
+  app_prod: "<APP_PROD>"
+
