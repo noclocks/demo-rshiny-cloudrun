@@ -75,10 +75,6 @@ jobs:
           service: ${{ env.APP_NAME }}
           image: us-docker.pkg.dev/${{ env.GCP_PROJECT_ID }}/${{ env.GCP_GAR_NAME }}/${{ env.APP_NAME }}:${{ github.sha }}
           region: ${{ env.GCP_REGION }}
-          platform: managed
-          allow-unauthenticated: true
-          env_vars: |
-            R_CONFIG_ACTIVE=production
 
       - name: Output Service URL
         run: echo ${{ steps.deploy.outputs.url }}
