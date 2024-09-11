@@ -5,6 +5,19 @@
 manifest.json
 rsconnect/
 .Rproj.user
+docs/
+.github/
+.lintr
+CHANGELOG.md
+README.md
+codecov.yml
+config.yml
+index.md
+LICENSE
+LICENSE.md
+Makefile
+NEWS.md
+pkgdown/
 
 # Ignore generated credentials from google-github-actions/auth
 gha-creds-*.json
