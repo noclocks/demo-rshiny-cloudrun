@@ -21,3 +21,6 @@ $run_dev.*
 ^Dockerfile$
 ^\.dockerignore$
 ^\fly.toml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
