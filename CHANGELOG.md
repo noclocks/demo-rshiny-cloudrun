@@ -13,6 +13,7 @@
 
 ## Configuration
 
+- Tweak ignores ([b9c4ad7](https://github.com/noclocks/demo-rshiny-cloudrun/commit/b9c4ad7d1d6adfbcb2394cb761294151481b9273))  - (Jimmy Briggs)
 - Buildignore index.md ([2de3533](https://github.com/noclocks/demo-rshiny-cloudrun/commit/2de35339adc8efc9a2d907accc330f51a774142f))  - (Jimmy Briggs)
 
 ## Documentation
