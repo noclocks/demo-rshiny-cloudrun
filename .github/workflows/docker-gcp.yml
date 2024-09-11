@@ -66,7 +66,7 @@ jobs:
         id: build
         run: |-
           docker build --build-arg R_CONFIG_ACTIVE=production . --tag $GCP_REGION-docker.pkg.dev/$GCP_PROJECT_ID/$GCP_GAR_NAME/$APP_NAME:$GITHUB_SHA
-          docker push ${{ env.IMAGE_TAG }}
+          docker push $GCP_REGION-docker.pkg.dev/$GCP_PROJECT_ID/$GCP_GAR_NAME/$APP_NAME:$GITHUB_SHA
 
       - name: Deploy to Cloud Run
         id: deploy
