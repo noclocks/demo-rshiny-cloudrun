@@ -53,4 +53,4 @@ RUN rm -rf /build_zone
 EXPOSE 5000
 USER shiny
 
-CMD R -e "options('shiny.port'=5000,shiny.host='0.0.0.0');library(rshinycloudrun);rshinycloudrun::run_app()"
+CMD ["R", "-e", "options('shiny.port'='5000','shiny.host'='0.0.0.0');library(rshinycloudrun);rshinycloudrun::run_app()"]
