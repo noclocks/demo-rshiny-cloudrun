@@ -36,6 +36,15 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Build and Push to GHCR](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-ghcr.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-ghcr.yml)
 [![Build and Deploy to Cloud Run](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-gcp.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/docker-gcp.yml)
+[![R CMD Check](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/check.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/check.yml)
+[![Test Coverage](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/coverage.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/coverage.yml)
+[![Code Style](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/style.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/style.yml)
+[![Lint](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/lint.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/lint.yml)
+[![Dependabot Updates](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/dependabot/dependabot-updates)
+[![Document (Roxygen)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/roxygen.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/roxygen.yml)
+[![pages-build-deployment](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pages/pages-build-deployment)
+[![pkgdown](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pkgdown.yml)
+[![Pkgdown Multi](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pkgdown-multi.yml/badge.svg)](https://github.com/noclocks/demo-rshiny-cloudrun/actions/workflows/pkgdown-multi.yml)
 <!-- badges: end -->
 
 ## Overview
