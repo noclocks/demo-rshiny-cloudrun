@@ -21,7 +21,6 @@ env:
   GCP_GAR_NAME: "demo-rshiny-cloudrun"
   APP_NAME: "rshinycloudrun"
   REPOSITORY_NAME: ${{ github.repository }}
-  APP_NAME: rshinycloudrun
 
 jobs:
   deploy:
