@@ -6,6 +6,8 @@
 \alias{rshinycloudrun-package}
 \title{rshinycloudrun: Shiny App on Google Cloud Run}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 Deploy a Shiny app to Google Cloud Run.
 }
 \seealso{
