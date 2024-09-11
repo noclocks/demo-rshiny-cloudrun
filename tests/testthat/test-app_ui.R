@@ -7,4 +7,3 @@ test_that("app ui", {
     expect_true(i %in% names(fmls))
   }
 })
-

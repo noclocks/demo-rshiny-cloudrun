@@ -39,17 +39,16 @@ app_sys <- function(...) {
 #'
 #' @importFrom config get
 get_app_config <- function(
-  value,
-  config = Sys.getenv(
-    "APP_CONFIG_ACTIVE",
-    Sys.getenv(
-      "R_CONFIG_ACTIVE",
-      "default"
-    )
-  ),
-  use_parent = TRUE,
-  file = app_sys("config.yml")
-) {
+    value,
+    config = Sys.getenv(
+      "APP_CONFIG_ACTIVE",
+      Sys.getenv(
+        "R_CONFIG_ACTIVE",
+        "default"
+      )
+    ),
+    use_parent = TRUE,
+    file = app_sys("config.yml")) {
   config::get(
     value = value,
     config = config,
