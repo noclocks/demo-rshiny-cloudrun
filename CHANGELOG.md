@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+## Bug Fixes
+
+- Fix GHA ([0f67c58](https://github.com/noclocks/demo-rshiny-cloudrun/commit/0f67c5851d3ab40553bb27fc147884f30f890b69))  - (Jimmy Briggs)
+
 ## Configuration
 
 - Buildignore index.md ([2de3533](https://github.com/noclocks/demo-rshiny-cloudrun/commit/2de35339adc8efc9a2d907accc330f51a774142f))  - (Jimmy Briggs)
