@@ -31,7 +31,7 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: 
     knitr
-Config/Needs/coverage: covr,covrpage
+Config/Needs/coverage: covr
 Config/Needs/website: pkgdown
 Config/testthat/edition: 3
 Encoding: UTF-8
