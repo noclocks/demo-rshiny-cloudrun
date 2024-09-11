@@ -10,6 +10,7 @@ on:
       - 'Dockerfile'
       - 'DESCRIPTION'
       - 'NAMESPACE'
+      - '.github/workflows/docker-gcp.yml'
   workflow_dispatch:
 
 env:
