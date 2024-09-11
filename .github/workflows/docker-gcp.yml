@@ -16,6 +16,7 @@ env:
   GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   GCP_REGION: ${{ secrets.GCP_REGION }}
   GCP_SERVICE_ACCOUNT_CREDENTIALS: ${{ secrets.GCP_SERVICE_ACCOUNT_CREDENTIALS }}
+  GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
   REPOSITORY_NAME: ${{ github.repository }}
   APP_NAME: rshinycloudrun
 
