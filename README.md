@@ -3,8 +3,8 @@
 <p align="center"><a href="CHANGELOG.md">Changelog</a>  &middot;  <a href="https://docs.noclocks.dev/gmhleasrdemo-rshiny-cloudrun/">Documentation</a>  &middot;  <a href="https://github.com/noclocks/demo-rshiny-cloudrun/pkgs/container/demo-rshiny-cloudrun">Docker Containers</a></p>
 
 <p align="center">
-  <img src="man/figures/r-shiny.webp" width="100px" height="auto" alt="R Shiny"/>
-  <img src="man/figures/cloud-run.png" width="100px" height="auto" alt="Google Cloud Run"/>
+  <img src="man/figures/r-shiny.svg" width="100px" height="auto" alt="R Shiny"/>
+  <img src="man/figures/google-cloud-run-svgrepo-com.svg" width="100px" height="auto" alt="Google Cloud Run"/>
 </p>
 
 <p align="center">
