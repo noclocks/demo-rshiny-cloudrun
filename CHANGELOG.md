@@ -8,6 +8,7 @@
 
 ## Bug Fixes
 
+- Fix GHA ([cb752bd](https://github.com/noclocks/demo-rshiny-cloudrun/commit/cb752bdc622288a73645ccf3b568b725eab2ff77))  - (Jimmy Briggs)
 - Fix GHA ([0f67c58](https://github.com/noclocks/demo-rshiny-cloudrun/commit/0f67c5851d3ab40553bb27fc147884f30f890b69))  - (Jimmy Briggs)
 
 ## Configuration
