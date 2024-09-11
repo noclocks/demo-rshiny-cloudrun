@@ -13,16 +13,14 @@ RUN apt-get update -y -qq && apt-get -y --no-install-recommends install \
   libjpeg-dev \
   libjq-dev \
   libglpk-dev \
+  && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
-  && apt-get -y autoremove \
-  && apt-get -y clean
+  && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 RUN mkdir -p /usr/local/lib/R/etc/ /usr/lib/R/etc/
-
 RUN echo "options(renv.config.pak.enabled = FALSE, repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl', Ncpus = 4)" | tee /usr/local/lib/R/etc/Rprofile.site | tee /usr/lib/R/etc/Rprofile.site
 
 RUN R -e 'install.packages("remotes")'
-
 RUN Rscript -e 'remotes::install_version("pkgload",upgrade="never", version = "1.3.4")'
 RUN Rscript -e 'remotes::install_version("knitr",upgrade="never", version = "1.47")'
 RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.8.1.1")'
