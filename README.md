@@ -22,6 +22,13 @@
 
 ## Contents
 
+- [Badges](#badges)
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+  - [Pre-Requisites](#pre-requisites)
+- [Code of Conduct](#code-of-conduct)
 
 ## Badges
 
