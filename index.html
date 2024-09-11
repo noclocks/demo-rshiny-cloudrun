@@ -19,7 +19,7 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -57,29 +57,73 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div class="section level1">
-<div class="page-header"><h1 id="r-shiny-app-on-gcp-cloud-run-demo">R Shiny App on GCP Cloud Run Demo<a class="anchor" aria-label="anchor" href="#r-shiny-app-on-gcp-cloud-run-demo"></a>
-</h1></div>
-<!-- badges: start -->
 
+<div class="page-header"><h1 align="center">
+R Shiny App on GCP Cloud Run Demo
+</h1></div>
+<p align="center">
+<a href="CHANGELOG.html">Changelog</a> · <a href="https://docs.noclocks.dev/gmhleasrdemo-rshiny-cloudrun/" class="external-link">Documentation</a> · <a href="https://github.com/noclocks/demo-rshiny-cloudrun/pkgs/container/demo-rshiny-cloudrun" class="external-link">Docker Containers</a>
+</p>
+<p align="center">
+<img src="reference/figures/r-shiny.webp" width="100px" height="auto" alt="R Shiny"><img src="reference/figures/cloud-run.png" width="100px" height="auto" alt="Google Cloud Run"></p>
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;pause=1000&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;width=450&amp;height=80&amp;lines=R+Shiny+Google+Cloud+Run;Built+by+No+Clocks%2C+LLC" alt="Typing SVG"></p>
+<hr>
 <blockquote>
-<p>[!NOTE] This repository houses a demonstration R package that showcases how to develop and deploy an R Shiny app to Google Cloud Platform’s (GCP) Cloud Run service using Docker.</p>
+<p>[!NOTE] This is an R package built by <a href="https://noclocks.dev" class="external-link">No Clocks, LLC</a> for demonstration purposes. It aims to showcase how to develop and deploy an R Shiny app as a package to Google Cloud Platform’s (GCP) Cloud Run service using Docker.</p>
 </blockquote>
+<hr>
 <div class="section level2">
 <h2 id="contents">Contents<a class="anchor" aria-label="anchor" href="#contents"></a>
 </h2>
 </div>
 <div class="section level2">
-<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+<h2 id="badges">Badges<a class="anchor" aria-label="anchor" href="#badges"></a>
 </h2>
+<!-- badges: start -->
+
 </div>
 <div class="section level2">
-<h2 id="pre-requisites">Pre-Requisites<a class="anchor" aria-label="anchor" href="#pre-requisites"></a>
+<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
+<p>This repository contains an R package that demonstrates how to build and deploy an R Shiny app to Google Cloud Platform’s (GCP) Cloud Run service using Docker.</p>
+</div>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version of <code>rshinycloudrun</code> from GitHub with your preferred installation method below:</p>
+<blockquote>
+<p>[!WARNING] Notice that although the R package is named <code>rshinycloudrun</code>, the GitHub repository is named <code>demo-rshiny-cloudrun</code>. This is for internal organization purposes and should not affect the installation process.</p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Install using remotes</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"noclocks/demo-rshiny-cloudrun"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Or using devtools</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"noclocks/demo-rshiny-cloudrun"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Or using pak</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pkg_install.html" class="external-link">pkg_install</a></span><span class="op">(</span><span class="st">"noclocks/demo-rshiny-cloudrun"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<p>Once installed, you can load the package and run the Shiny app using the following commands:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rshinycloudrun</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/run_app.html">run_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="deployment">Deployment<a class="anchor" aria-label="anchor" href="#deployment"></a>
+</h2>
+<p>The package is set up to build and deploy the R Shiny app to Google Cloud Platform’s (GCP) Cloud Run service using Docker.</p>
+<div class="section level3">
+<h3 id="pre-requisites">Pre-Requisites<a class="anchor" aria-label="anchor" href="#pre-requisites"></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li><a href="https://cloud.google.com/" class="external-link">Google Cloud Platform (GCP) Account</a></li>
 <li><a href="https://www.docker.com/products/docker-desktop" class="external-link">Docker Desktop</a></li>
@@ -90,12 +134,15 @@
 <li><a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy" class="external-link">Google Cloud Run</a></li>
 </ol>
 </div>
+</div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
 </h2>
 <p>Please note that the <code>rshinycloudrun</code> package is released with a <a href="https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<hr>
+<p>© 2024 <a href="https://noclocks.dev" class="external-link">No Clocks, LLC</a></p>
 </div>
-</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -148,16 +195,16 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>
