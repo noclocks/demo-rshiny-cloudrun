@@ -26,6 +26,7 @@
 
 ## Features
 
+- Update docker ([66a93d6](https://github.com/noclocks/demo-rshiny-cloudrun/commit/66a93d60bb5bdf6b3934c8ddac03e6878e63c317))  - (Jimmy Briggs)
 - Fixes ([8fd2ab5](https://github.com/noclocks/demo-rshiny-cloudrun/commit/8fd2ab5e6468c69192065a3361585e8293223961))  - (Jimmy Briggs)
 - Bulk update ([f42c20a](https://github.com/noclocks/demo-rshiny-cloudrun/commit/f42c20aa230b015cee0bc50878f4077acea001af))  - (Jimmy Briggs)
 - Update DESCRIPTION ([170a352](https://github.com/noclocks/demo-rshiny-cloudrun/commit/170a35213e20b4c5954b2fe94aea1729c741da33))  - (Jimmy Briggs)
