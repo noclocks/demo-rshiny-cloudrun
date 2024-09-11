@@ -73,7 +73,7 @@ jobs:
         uses: google-github-actions/deploy-cloudrun@v2
         with:
           service: ${{ env.APP_NAME }}
-          image: $GCP_REGION-docker.pkg.dev/$GCP_PROJECT_ID/$GCP_GAR_NAME/$APP_NAME:$GITHUB_SHA
+          image: us-docker.pkg.dev/${{ env.GCP_PROJECT_ID }}/${{ env.GCP_GAR_NAME }}/${{ env.APP_NAME }}:${{ github.sha }}
           region: ${{ env.GCP_REGION }}
           platform: managed
           allow-unauthenticated: true
