@@ -11,9 +11,6 @@
 #'   matched `...`, or the empty string, `""`, if none matched.
 #'
 #' @seealso [system.file()]
-#'
-#' @examples
-#' config_file <- app_sys("config/config.yml")
 app_sys <- function(...) {
   system.file(..., package = "rshinycloudrun")
 }

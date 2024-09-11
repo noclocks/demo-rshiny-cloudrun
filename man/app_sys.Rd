@@ -18,9 +18,6 @@ Character vector of positive length, containing the file paths that
 \description{
 Access files in the current app.
 }
-\examples{
-config_file <- app_sys("config/config.yml")
-}
 \seealso{
 [system.file()]
 }

@@ -16,8 +16,10 @@ Depends:
     R (>= 4.1)
 Imports: 
     config (>= 0.3.2),
+    datasets,
     glue,
     golem (>= 0.4.1),
+    graphics,
     rlang,
     shiny (>= 1.8.1.1),
     tibble
