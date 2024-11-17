@@ -18,6 +18,7 @@
 
 ## Documentation
 
+- New URL ([61be24b](https://github.com/noclocks/demo-rshiny-cloudrun/commit/61be24b46eaa1a68f328de2c4ded98cc2cda60a6))  - (Jimmy Briggs)
 - README ([92dd093](https://github.com/noclocks/demo-rshiny-cloudrun/commit/92dd093a511698ae2c0d85df22de71fa5cfa17d7))  - (Jimmy Briggs)
 - Add badges ([939c27c](https://github.com/noclocks/demo-rshiny-cloudrun/commit/939c27c7d9af2760252340a04c16b90a7c053260))  - (Jimmy Briggs)
 - Separate index.md from README.md for pkgdown ([82ffd12](https://github.com/noclocks/demo-rshiny-cloudrun/commit/82ffd12e1811a09f33ea397411996e5aa9324535))  - (Jimmy Briggs)
