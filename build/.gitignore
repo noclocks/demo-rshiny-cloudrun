@@ -1,8 +1,0 @@
-*
-!.gitignore
-!Dockerfile
-!Dockerfile_base
-!README.md
-!renv.lock.prod
-!renv.lock
-!compose.yml
