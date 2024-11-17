@@ -26,6 +26,8 @@
 
 ## Features
 
+- Add compose.yml ([a8add00](https://github.com/noclocks/demo-rshiny-cloudrun/commit/a8add00c97fca2d28cd948d638198303691cb1b5))  - (Jimmy Briggs)
+- Update wordlist and namespace ([7fd4166](https://github.com/noclocks/demo-rshiny-cloudrun/commit/7fd416634e52906fc8b810041640412e30932db4))  - (Jimmy Briggs)
 - Update deployment and Dockerfile ([c3ad356](https://github.com/noclocks/demo-rshiny-cloudrun/commit/c3ad356e31431fd089e2f76ddf66e78020215ac1))  - (Jimmy Briggs)
 - Update docker ([66a93d6](https://github.com/noclocks/demo-rshiny-cloudrun/commit/66a93d60bb5bdf6b3934c8ddac03e6878e63c317))  - (Jimmy Briggs)
 - Fixes ([8fd2ab5](https://github.com/noclocks/demo-rshiny-cloudrun/commit/8fd2ab5e6468c69192065a3361585e8293223961))  - (Jimmy Briggs)
