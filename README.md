@@ -1,6 +1,6 @@
 <h1 align="center">R Shiny App on GCP Cloud Run Demo</h1>
 
-<p align="center"><a href="https://rshinycloudrun-nww2xq2zza-ue.a.run.app/">Deployed Shiny App</a></p>
+<p align="center"><a href="https://rshinycloudrun-161203019910.us-east1.run.app">Deployed Shiny App</a></p>
 <p align="center"><a href="CHANGELOG.md">Changelog</a>  &middot;  <a href="https://docs.noclocks.dev/gmhleasrdemo-rshiny-cloudrun/">Documentation</a>  &middot;  <a href="https://github.com/noclocks/demo-rshiny-cloudrun/pkgs/container/demo-rshiny-cloudrun">Docker Containers</a></p>
 
 <p align="center">
