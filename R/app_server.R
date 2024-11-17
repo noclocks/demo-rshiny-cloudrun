@@ -4,7 +4,7 @@
 #'
 #' @import shiny
 #' @noRd
-#' @importFrom datasets faithful
+#' @import datasets
 #' @importFrom graphics hist
 app_server <- function(input, output, session) {
   output$distPlot <- renderPlot({
